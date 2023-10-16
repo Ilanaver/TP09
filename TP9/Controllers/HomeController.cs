@@ -1,10 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace TP9.Controllers;
+namespace tp9.Controllers;
 
 public class HomeController : Controller
 {
-    public IActionResult Index()
+    public IActionResult Login()
+    {
+        return View();
+    }
+    public IActionResult Bienvenida()
     {
         return View();
     }
@@ -12,13 +16,8 @@ public class HomeController : Controller
     {
         return View();
     }
-    public IActionResult Bienvenida(){
-        return View();
-    }
-    public IActionResult Login(){
-        return View();
-    }
-    public IActionResult Olvide(){
+    public IActionResult Olvide()
+    {
         return View();
     }
 }
